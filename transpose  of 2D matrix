@@ -1,0 +1,20 @@
+# input the 21d matrix from user
+print("Enter the elements of Matrix:")
+matrix= [[int(input()) for i in range(0,2)] for i in range(0,2)]
+print("Your  Matrix is")
+for n in matrix:
+    print(n)
+
+#result matrix of column*row  daimension
+
+result =[[0 for i in range(0,2)] for j in range(0,2)]
+#transpose of the input matrix
+for r in range(0,2):
+   
+   for c in range(0,2):
+       #here we are taking the row data of matrix and putting it in the column on the result
+       result[c][r] = matrix[r][c]
+
+print("Transpose matrix is: ")
+for r in result:
+    print(r)
